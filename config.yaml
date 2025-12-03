@@ -1,0 +1,20 @@
+pools:
+  - "POOL-401N"
+  - "POOL-473N"
+  - "POOL-479N"
+  - "POOL-496N"
+  - "POOL-527N"
+  - "POOL-546N"
+  - "POOL-551N"
+
+# carpeta archivos de las runs del secuenciador
+runs_dir: "data/runs"
+
+# genoma de referencia
+reference: "data/reference/hg38.fa"
+
+# 
+threads:
+  bcl2fastq: 4
+  align: 4
+  dup: 2
