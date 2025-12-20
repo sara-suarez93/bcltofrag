@@ -1,0 +1,299 @@
+Sender: LSF System <lsfadmin@rivm-lsfsv-l19p>
+Subject: Job 27654036: <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-473N -j 8> in cluster <RIVM-LSF-PRD> Done
+
+Job <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-473N -j 8> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Wed Dec  3 02:11:43 2025
+Job was executed on host(s) <8*rivm-lsfsv-l19p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Wed Dec  3 02:11:44 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm> was used as the working directory.
+Started at Wed Dec  3 02:11:44 2025
+Terminated at Wed Dec  3 08:26:42 2025
+Results reported at Wed Dec  3 08:26:42 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-473N -j 8
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   163382.00 sec.
+    Max Memory :                                 49675 MB
+    Average Memory :                             39797.14 MB
+    Total Requested Memory :                     80000.00 MB
+    Delta Memory :                               30325.00 MB
+    Max Swap :                                   2 MB
+    Max Processes :                              15
+    Max Threads :                                152
+    Run time :                                   22498 sec.
+    Turnaround time :                            22499 sec.
+
+The output (if any) follows:
+
+Detected samples per pool:
+{'POOL-473N': ['L-25000010_S5', 'L-25000015_S4', 'L-25000021_S7', 'L-25000022_S8', 'L-25000024_S3', 'L-25000011_S1', 'L-25000023_S2', 'L-25000020_S6']}
+
+
+PS:
+
+Read file <err_bcl2bam.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@rivm-lsfsv-l23p>
+Subject: Job 27655822: <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-496N -j 8> in cluster <RIVM-LSF-PRD> Exited
+
+Job <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-496N -j 8> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Wed Dec  3 10:13:38 2025
+Job was executed on host(s) <8*rivm-lsfsv-l23p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Wed Dec  3 10:13:40 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm> was used as the working directory.
+Started at Wed Dec  3 10:13:40 2025
+Terminated at Wed Dec  3 10:13:40 2025
+Results reported at Wed Dec  3 10:13:40 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-496N -j 8
+------------------------------------------------------------
+
+Exited with exit code 127.
+
+Resource usage summary:
+
+    CPU time :                                   0.02 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     80000.00 MB
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   0 sec.
+    Turnaround time :                            2 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <err_bcl2bam.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@rivm-lsfsv-l23p>
+Subject: Job 27655831: <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-496N -j 8> in cluster <RIVM-LSF-PRD> Done
+
+Job <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-496N -j 8> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Wed Dec  3 10:14:07 2025
+Job was executed on host(s) <8*rivm-lsfsv-l23p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Wed Dec  3 10:14:08 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm> was used as the working directory.
+Started at Wed Dec  3 10:14:08 2025
+Terminated at Wed Dec  3 16:48:30 2025
+Results reported at Wed Dec  3 16:48:30 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-496N -j 8
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   174056.00 sec.
+    Max Memory :                                 49966 MB
+    Average Memory :                             40587.54 MB
+    Total Requested Memory :                     80000.00 MB
+    Delta Memory :                               30034.00 MB
+    Max Swap :                                   2 MB
+    Max Processes :                              15
+    Max Threads :                                165
+    Run time :                                   23662 sec.
+    Turnaround time :                            23663 sec.
+
+The output (if any) follows:
+
+Detected samples per pool:
+{'POOL-496N': ['L-25000061_S8', 'L-25000049_S4', 'L-25000059_S7', 'L-25000051_S6', 'L-25000047_S1', 'L-25000057_S2', 'L-25000058_S5', 'L-25000048_S3']}
+
+
+PS:
+
+Read file <err_bcl2bam.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@rivm-lsfsv-l18p>
+Subject: Job 27667094: <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-546N -j 8> in cluster <RIVM-LSF-PRD> Done
+
+Job <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-546N -j 8> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Wed Dec  3 19:40:17 2025
+Job was executed on host(s) <8*rivm-lsfsv-l18p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Wed Dec  3 19:40:18 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm> was used as the working directory.
+Started at Wed Dec  3 19:40:18 2025
+Terminated at Thu Dec  4 02:41:55 2025
+Results reported at Thu Dec  4 02:41:55 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-546N -j 8
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   183351.00 sec.
+    Max Memory :                                 47460 MB
+    Average Memory :                             39564.02 MB
+    Total Requested Memory :                     80000.00 MB
+    Delta Memory :                               32540.00 MB
+    Max Swap :                                   2 MB
+    Max Processes :                              15
+    Max Threads :                                168
+    Run time :                                   25297 sec.
+    Turnaround time :                            25298 sec.
+
+The output (if any) follows:
+
+Detected samples per pool:
+{'POOL-546N': ['L-25000007_S1', 'L-25000105_S2', 'L-25000099_S8', 'L-25000038_S3', 'L-25000026_S5', 'L-25000064_S6', 'L-25000046_S4', 'L-25000086_S7']}
+
+
+PS:
+
+Read file <err_bcl2bam.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@rivm-lsfsv-l21p>
+Subject: Job 27671081: <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-551N -j 8> in cluster <RIVM-LSF-PRD> Done
+
+Job <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-551N -j 8> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Thu Dec  4 09:37:18 2025
+Job was executed on host(s) <8*rivm-lsfsv-l21p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Thu Dec  4 09:37:18 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm> was used as the working directory.
+Started at Thu Dec  4 09:37:18 2025
+Terminated at Thu Dec  4 16:10:50 2025
+Results reported at Thu Dec  4 16:10:50 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-551N -j 8
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   170793.00 sec.
+    Max Memory :                                 49630 MB
+    Average Memory :                             40470.15 MB
+    Total Requested Memory :                     80000.00 MB
+    Delta Memory :                               30370.00 MB
+    Max Swap :                                   708 MB
+    Max Processes :                              15
+    Max Threads :                                166
+    Run time :                                   23611 sec.
+    Turnaround time :                            23612 sec.
+
+The output (if any) follows:
+
+Detected samples per pool:
+{'POOL-551N': ['L-25000092_S4', 'L-25000082_S3', 'L-25000089_S6', 'L-25000081_S2', 'L-25000090_S7', 'L-25000091_S8', 'L-25000067_S1', 'L-25000098_S5']}
+
+
+PS:
+
+Read file <err_bcl2bam.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@rivm-lsfsv-l18p>
+Subject: Job 27685501: <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-479N -j 8> in cluster <RIVM-LSF-PRD> Done
+
+Job <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-479N -j 8> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Thu Dec  4 17:13:38 2025
+Job was executed on host(s) <8*rivm-lsfsv-l18p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Thu Dec  4 17:13:39 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm> was used as the working directory.
+Started at Thu Dec  4 17:13:39 2025
+Terminated at Thu Dec  4 18:18:24 2025
+Results reported at Thu Dec  4 18:18:24 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-479N -j 8
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   27175.00 sec.
+    Max Memory :                                 47909 MB
+    Average Memory :                             36791.38 MB
+    Total Requested Memory :                     80000.00 MB
+    Delta Memory :                               32091.00 MB
+    Max Swap :                                   2 MB
+    Max Processes :                              15
+    Max Threads :                                191
+    Run time :                                   3885 sec.
+    Turnaround time :                            3886 sec.
+
+The output (if any) follows:
+
+Detected samples per pool:
+{'POOL-479N': ['ID27_S27', 'ID16_S16', 'ID24_S24', 'ID11_S11', 'ID18_S18', 'ID9_S9', 'ID1_S1', 'ID17_S17', 'ID7_S7', 'ID19_S19', 'ID4_S4', 'ID6_S6', 'ID31_S31', 'ID21_S21', 'ID13_S13', 'ID12_S12', 'ID22_S22', 'ID14_S14', 'ID26_S26', 'ID28_S28', 'ID25_S25', 'ID15_S15', 'ID29_S29', 'ID2_S2', 'ID8_S8', 'ID3_S3', 'ID20_S20', 'ID32_S32', 'ID30_S30', 'ID5_S5', 'ID10_S10', 'ID23_S23']}
+
+
+PS:
+
+Read file <err_bcl2bam.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@rivm-lsfsv-l22p>
+Subject: Job 27693041: <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-401N -j 8> in cluster <RIVM-LSF-PRD> Done
+
+Job <snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-401N -j 8> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Fri Dec  5 10:02:51 2025
+Job was executed on host(s) <8*rivm-lsfsv-l22p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Fri Dec  5 10:02:52 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm> was used as the working directory.
+Started at Fri Dec  5 10:02:52 2025
+Terminated at Fri Dec  5 11:47:59 2025
+Results reported at Fri Dec  5 11:47:59 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+snakemake -s scripts/snakefile_bcl2bam.py --config pool=POOL-401N -j 8
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   45429.48 sec.
+    Max Memory :                                 47048 MB
+    Average Memory :                             37626.83 MB
+    Total Requested Memory :                     80000.00 MB
+    Delta Memory :                               32952.00 MB
+    Max Swap :                                   2 MB
+    Max Processes :                              15
+    Max Threads :                                166
+    Run time :                                   6307 sec.
+    Turnaround time :                            6308 sec.
+
+The output (if any) follows:
+
+Detected samples per pool:
+{'POOL-401N': ['10-CH_S5', '6-CH_S3', '12-CH_S6', 'CTRL-M-BL-CHUIMI_S7', '4-CH_S2', '9-CH_S4', '2-CH_S1', 'CTRL-F-BL-CHUIMI_S8']}
+
+
+PS:
+
+Read file <err_bcl2bam.txt> for stderr output of this job.
+
