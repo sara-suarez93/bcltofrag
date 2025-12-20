@@ -7,13 +7,11 @@ __pycache__/
 .ipynb_checkpoints
 .ipynb_checkpoints/
 
-# data files
+# data files - temporary until completed
 *.tsv
 
-# plot files
+# plot files - temporary until completed
 *.png
 *.tiff
 *.pdf
 
-# output folders
-output/
