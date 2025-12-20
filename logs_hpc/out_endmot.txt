@@ -1,0 +1,208 @@
+Sender: LSF System <lsfadmin@rivm-lsfsv-l24p>
+Subject: Job 28032609: <python scripts/02_endmotifs.py> in cluster <RIVM-LSF-PRD> Exited
+
+Job <python scripts/02_endmotifs.py> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:32:29 2025
+Job was executed on host(s) <rivm-lsfsv-l24p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:32:31 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm/bcltofragmentomics> was used as the working directory.
+Started at Sun Dec 21 00:32:31 2025
+Terminated at Sun Dec 21 00:32:31 2025
+Results reported at Sun Dec 21 00:32:31 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python scripts/02_endmotifs.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.06 sec.
+    Max Memory :                                 10 MB
+    Average Memory :                             9.00 MB
+    Total Requested Memory :                     64000.00 MB
+    Delta Memory :                               63990.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   0 sec.
+    Turnaround time :                            2 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <logs_hpc/err_endmot.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@rivm-lsfsv-l24p>
+Subject: Job 28032611: <python scripts/02_endmotifs.py> in cluster <RIVM-LSF-PRD> Exited
+
+Job <python scripts/02_endmotifs.py> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:33:14 2025
+Job was executed on host(s) <rivm-lsfsv-l24p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:33:15 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm/bcltofragmentomics> was used as the working directory.
+Started at Sun Dec 21 00:33:15 2025
+Terminated at Sun Dec 21 00:33:15 2025
+Results reported at Sun Dec 21 00:33:15 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python scripts/02_endmotifs.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.06 sec.
+    Max Memory :                                 10 MB
+    Average Memory :                             10.00 MB
+    Total Requested Memory :                     64000.00 MB
+    Delta Memory :                               63990.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   1 sec.
+    Turnaround time :                            1 sec.
+
+The output (if any) follows:
+
+
+
+PS:
+
+Read file <logs_hpc/err_endmot.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@rivm-lsfsv-l24p>
+Subject: Job 28032612: <python scripts/02_endmotifs.py> in cluster <RIVM-LSF-PRD> Exited
+
+Job <python scripts/02_endmotifs.py> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:33:38 2025
+Job was executed on host(s) <rivm-lsfsv-l24p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:33:39 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm/bcltofragmentomics> was used as the working directory.
+Started at Sun Dec 21 00:33:39 2025
+Terminated at Sun Dec 21 00:33:59 2025
+Results reported at Sun Dec 21 00:33:59 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python scripts/02_endmotifs.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.85 sec.
+    Max Memory :                                 130 MB
+    Average Memory :                             82.20 MB
+    Total Requested Memory :                     64000.00 MB
+    Delta Memory :                               63870.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   20 sec.
+    Turnaround time :                            21 sec.
+
+The output (if any) follows:
+
+Processing 10-CH_S5.markdup.bam
+
+
+PS:
+
+Read file <logs_hpc/err_endmot.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@rivm-lsfsv-l24p>
+Subject: Job 28032613: <python scripts/02_endmotifs.py> in cluster <RIVM-LSF-PRD> Exited
+
+Job <python scripts/02_endmotifs.py> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:36:11 2025
+Job was executed on host(s) <rivm-lsfsv-l24p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:36:11 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm/bcltofragmentomics> was used as the working directory.
+Started at Sun Dec 21 00:36:11 2025
+Terminated at Sun Dec 21 00:36:16 2025
+Results reported at Sun Dec 21 00:36:16 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python scripts/02_endmotifs.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.20 sec.
+    Max Memory :                                 131 MB
+    Average Memory :                             91.00 MB
+    Total Requested Memory :                     64000.00 MB
+    Delta Memory :                               63869.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   5 sec.
+    Turnaround time :                            5 sec.
+
+The output (if any) follows:
+
+Processing 10-CH_S5.markdup.bam
+
+
+PS:
+
+Read file <logs_hpc/err_endmot.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@rivm-lsfsv-l24p>
+Subject: Job 28032614: <python scripts/02_endmotifs.py> in cluster <RIVM-LSF-PRD> Exited
+
+Job <python scripts/02_endmotifs.py> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:36:49 2025
+Job was executed on host(s) <rivm-lsfsv-l24p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:36:50 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm/bcltofragmentomics> was used as the working directory.
+Started at Sun Dec 21 00:36:50 2025
+Terminated at Sun Dec 21 00:36:55 2025
+Results reported at Sun Dec 21 00:36:55 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python scripts/02_endmotifs.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.17 sec.
+    Max Memory :                                 123 MB
+    Average Memory :                             5.00 MB
+    Total Requested Memory :                     64000.00 MB
+    Delta Memory :                               63877.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   5 sec.
+    Turnaround time :                            6 sec.
+
+The output (if any) follows:
+
+Processing 10-CH_S5.markdup.bam
+
+
+PS:
+
+Read file <logs_hpc/err_endmot.txt> for stderr output of this job.
+

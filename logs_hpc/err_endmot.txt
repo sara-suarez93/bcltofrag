@@ -1,0 +1,43 @@
+  File "/mnt/scratch_dir/suarezhs/tfm/bcltofragmentomics/scripts/02_endmotifs.py", line 41
+    )
+    ^
+SyntaxError: unmatched ')'
+  File "/mnt/scratch_dir/suarezhs/tfm/bcltofragmentomics/scripts/02_endmotifs.py", line 41
+    )
+    ^
+SyntaxError: unmatched ')'
+Traceback (most recent call last):
+  File "/mnt/scratch_dir/suarezhs/tfm/bcltofragmentomics/scripts/02_endmotifs.py", line 36, in <module>
+    end_motifs(
+TypeError: end_motifs() missing 1 required positional argument: 'refseq_file'
+Traceback (most recent call last):
+  File "/mnt/scratch_dir/suarezhs/conda/envs/fragmentomics/lib/python3.12/site-packages/finaletoolkit/frag/_end_motifs.py", line 801, in end_motifs
+    refseq = py2bit.open(str(refseq_file), 'r')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Received an error during file opening!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/scratch_dir/suarezhs/tfm/bcltofragmentomics/scripts/02_endmotifs.py", line 36, in <module>
+    end_motifs(
+  File "/mnt/scratch_dir/suarezhs/conda/envs/fragmentomics/lib/python3.12/site-packages/finaletoolkit/frag/_end_motifs.py", line 804, in end_motifs
+    refseq.close()
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'refseq' where it is not associated with a value
+[twobitHdrRead] Received an invalid file magic number (0x7e93a3b3)!
+Traceback (most recent call last):
+  File "/mnt/scratch_dir/suarezhs/conda/envs/fragmentomics/lib/python3.12/site-packages/finaletoolkit/frag/_end_motifs.py", line 801, in end_motifs
+    refseq = py2bit.open(str(refseq_file), 'r')
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Received an error during file opening!
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/scratch_dir/suarezhs/tfm/bcltofragmentomics/scripts/02_endmotifs.py", line 36, in <module>
+    end_motifs(
+  File "/mnt/scratch_dir/suarezhs/conda/envs/fragmentomics/lib/python3.12/site-packages/finaletoolkit/frag/_end_motifs.py", line 804, in end_motifs
+    refseq.close()
+    ^^^^^^
+UnboundLocalError: cannot access local variable 'refseq' where it is not associated with a value
