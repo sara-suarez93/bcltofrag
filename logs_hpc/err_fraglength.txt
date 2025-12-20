@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/mnt/scratch_dir/suarezhs/tfm/bcltofragmentomics/scripts/01_fragment_lengths.py", line 27, in <module>
+    samplename = bam_basename.replace(".bam", "")
+                 ^^^^^^^^^^^^
+NameError: name 'bam_basename' is not defined
