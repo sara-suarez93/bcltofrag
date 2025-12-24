@@ -206,3 +206,156 @@ PS:
 
 Read file <logs_hpc/err_endmot.txt> for stderr output of this job.
 
+Sender: LSF System <lsfadmin@rivm-lsfsv-l26p>
+Subject: Job 28032620: <python scripts/02_endmotifs.py> in cluster <RIVM-LSF-PRD> Done
+
+Job <python scripts/02_endmotifs.py> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:41:17 2025
+Job was executed on host(s) <rivm-lsfsv-l26p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Sun Dec 21 00:41:18 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm/bcltofragmentomics> was used as the working directory.
+Started at Sun Dec 21 00:41:18 2025
+Terminated at Sun Dec 21 23:28:32 2025
+Results reported at Sun Dec 21 23:28:32 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python scripts/02_endmotifs.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   81194.09 sec.
+    Max Memory :                                 242 MB
+    Average Memory :                             183.82 MB
+    Total Requested Memory :                     64000.00 MB
+    Delta Memory :                               63758.00 MB
+    Max Swap :                                   -
+    Max Processes :                              4
+    Max Threads :                                8
+    Run time :                                   82034 sec.
+    Turnaround time :                            82035 sec.
+
+The output (if any) follows:
+
+Processing 10-CH_S5.markdup.bam
+Processing 12-CH_S6.markdup.bam
+Processing 2-CH_S1.markdup.bam
+Processing 4-CH_S2.markdup.bam
+Processing 6-CH_S3.markdup.bam
+Processing 9-CH_S4.markdup.bam
+Processing CTRL-F-BL-CHUIMI_S8.markdup.bam
+Processing CTRL-M-BL-CHUIMI_S7.markdup.bam
+Processing L-25000010_S5.markdup.bam
+Processing L-25000011_S1.markdup.bam
+Processing L-25000015_S4.markdup.bam
+Processing L-25000020_S6.markdup.bam
+Processing L-25000021_S7.markdup.bam
+Processing L-25000022_S8.markdup.bam
+Processing L-25000023_S2.markdup.bam
+Processing L-25000024_S3.markdup.bam
+Processing ID25_S25.markdup.bam
+Processing ID26_S26.markdup.bam
+Processing ID27_S27.markdup.bam
+Processing ID28_S28.markdup.bam
+Processing ID29_S29.markdup.bam
+Processing ID30_S30.markdup.bam
+Processing ID31_S31.markdup.bam
+Processing ID32_S32.markdup.bam
+Processing L-25000047_S1.markdup.bam
+Processing L-25000048_S3.markdup.bam
+Processing L-25000049_S4.markdup.bam
+Processing L-25000051_S6.markdup.bam
+Processing L-25000057_S2.markdup.bam
+Processing L-25000058_S5.markdup.bam
+Processing L-25000059_S7.markdup.bam
+Processing L-25000061_S8.markdup.bam
+Processing L-25000063_S1.markdup.bam
+Processing L-25000065_S2.markdup.bam
+Processing L-25000066_S7.markdup.bam
+Processing L-25000069_S3.markdup.bam
+Processing L-25000071_S4.markdup.bam
+Processing L-25000075_S6.markdup.bam
+Processing L-25000076_S5.markdup.bam
+Processing L-25000080_S8.markdup.bam
+Processing L-25000007_S1.markdup.bam
+Processing L-25000026_S5.markdup.bam
+Processing L-25000038_S3.markdup.bam
+Processing L-25000046_S4.markdup.bam
+Processing L-25000064_S6.markdup.bam
+Processing L-25000086_S7.markdup.bam
+Processing L-25000099_S8.markdup.bam
+Processing L-25000105_S2.markdup.bam
+Processing L-25000067_S1.markdup.bam
+Processing L-25000081_S2.markdup.bam
+Processing L-25000082_S3.markdup.bam
+Processing L-25000089_S6.markdup.bam
+Processing L-25000090_S7.markdup.bam
+Processing L-25000091_S8.markdup.bam
+Processing L-25000092_S4.markdup.bam
+Processing L-25000098_S5.markdup.bam
+Processing 10-CH_S5.filtered.bam
+Processing 12-CH_S6.filtered.bam
+Processing 2-CH_S1.filtered.bam
+Processing 4-CH_S2.filtered.bam
+Processing 6-CH_S3.filtered.bam
+Processing 9-CH_S4.filtered.bam
+Processing CTRL-F-BL-CHUIMI_S8.filtered.bam
+Processing CTRL-M-BL-CHUIMI_S7.filtered.bam
+Processing ID25_S25.filtered.bam
+Processing ID26_S26.filtered.bam
+Processing ID27_S27.filtered.bam
+Processing ID28_S28.filtered.bam
+Processing ID29_S29.filtered.bam
+Processing ID30_S30.filtered.bam
+Processing ID31_S31.filtered.bam
+Processing ID32_S32.filtered.bam
+Processing L-25000007_S1.filtered.bam
+Processing L-25000010_S5.filtered.bam
+Processing L-25000011_S1.filtered.bam
+Processing L-25000015_S4.filtered.bam
+Processing L-25000020_S6.filtered.bam
+Processing L-25000021_S7.filtered.bam
+Processing L-25000022_S8.filtered.bam
+Processing L-25000023_S2.filtered.bam
+Processing L-25000024_S3.filtered.bam
+Processing L-25000026_S5.filtered.bam
+Processing L-25000038_S3.filtered.bam
+Processing L-25000046_S4.filtered.bam
+Processing L-25000047_S1.filtered.bam
+Processing L-25000048_S3.filtered.bam
+Processing L-25000049_S4.filtered.bam
+Processing L-25000051_S6.filtered.bam
+Processing L-25000057_S2.filtered.bam
+Processing L-25000058_S5.filtered.bam
+Processing L-25000059_S7.filtered.bam
+Processing L-25000061_S8.filtered.bam
+Processing L-25000063_S1.filtered.bam
+Processing L-25000064_S6.filtered.bam
+Processing L-25000065_S2.filtered.bam
+Processing L-25000066_S7.filtered.bam
+Processing L-25000067_S1.filtered.bam
+Processing L-25000069_S3.filtered.bam
+Processing L-25000071_S4.filtered.bam
+Processing L-25000075_S6.filtered.bam
+Processing L-25000076_S5.filtered.bam
+Processing L-25000080_S8.filtered.bam
+Processing L-25000081_S2.filtered.bam
+Processing L-25000082_S3.filtered.bam
+Processing L-25000086_S7.filtered.bam
+Processing L-25000089_S6.filtered.bam
+Processing L-25000090_S7.filtered.bam
+Processing L-25000091_S8.filtered.bam
+Processing L-25000092_S4.filtered.bam
+Processing L-25000098_S5.filtered.bam
+Processing L-25000099_S8.filtered.bam
+Processing L-25000105_S2.filtered.bam
+
+
+PS:
+
+Read file <logs_hpc/err_endmot.txt> for stderr output of this job.
+
