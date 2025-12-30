@@ -3,16 +3,9 @@ __pycache__/
 *.py[codz]
 *$py.class
 
-# Jupyter Notebook
+# archivos para ignorar
 .ipynb_checkpoints
 .ipynb_checkpoints/
-
-# data files - temporary until completed
-*.tsv
-
-# plot files - temporary until completed
-*.png
-*.tiff
-*.pdf
+preliminary.ipynb  
 *.2bit # ignore reference
 
