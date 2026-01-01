@@ -100,28 +100,6 @@ rule all:
         final_bai
 
 # ---------------------------------------------------
-# bcl2fastq: demultiplex las muestras en cada pool y convertir en FASTQ
-# ---------------------------------------------------
-rule bcl2fastq:
-    input:
-        runfolder = lambda wc: os.path.join(RUNS_DIR, wc.pool)
-    output:
-        directory(os.path.join(FASTQ_DIR, "{pool}"))
-    threads:
-        config["threads"]["bcl2fastq"]
-    shell:
-        """
-        mkdir -p {FASTQ_DIR}/{wildcards.pool}
-
-        bcl2fastq \
-            --runfolder-dir {input.runfolder} \
-            --output-dir    {FASTQ_DIR}/{wildcards.pool} \
-            --no-lane-splitting \
-            --processing-threads {threads} \
-            --use-bases-mask Y*,I8,U10,Y*
-        """
-
-# ---------------------------------------------------
 # alineamiento
 # ---------------------------------------------------
 # bam temporal para marcar duplicados en la siguiente regla
