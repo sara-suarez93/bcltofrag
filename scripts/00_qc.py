@@ -67,7 +67,9 @@ for i, filepath in enumerate(bams_lecturas, start=1):
                 not read.is_proper_pair or # lectura no esta emparejada
                 read.mapping_quality <= 30 # la calidad del alineamiento es baja
             ):
-            
+                continue
+                
+            # si no se cumplen, escribir la lectura
             out_bam.write(read)
     
     # crear bai (necesario para FinaleToolkit
@@ -77,4 +79,4 @@ for i, filepath in enumerate(bams_lecturas, start=1):
 end = time.time()
 
 # imprimo tiempo de computacion
-print(f"Tiempo total: {end - start/60:.2f} minutos")
+print(f"Tiempo total: {(end - start) / 60:.2f} minutos")

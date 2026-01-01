@@ -10,7 +10,6 @@ FASTQ_DIR = config["fastq_dir"]
 # creo carpetas para los outputs
 os.makedirs(FASTQ_DIR, exist_ok=True)
 
-
 # ---------------------------------------------------
 # output final: done.flag (archivo que marca final regla bcl2fastq)
 # ---------------------------------------------------
@@ -29,12 +28,12 @@ rule bcl2fastq:
         runfolder = lambda wc: os.path.join(RUNS_DIR, wc.pool)
     output:
         # flag file indica que se ha completado el demultiplexing de un POOL
-        touch(os.path.join(FASTQ_DIR, "{pool}", "done.flag"))
+        os.path.join(FASTQ_DIR, "{pool}", "done.flag")
         
     threads: config["threads"]["bcl2fastq"]
     shell:
         """
-        mkdir -p {FASTQ_DIR}
+        mkdir -p {FASTQ_DIR}/{wildcards.pool}
 
         bcl2fastq \
             --runfolder-dir {input.runfolder} \
@@ -42,6 +41,4 @@ rule bcl2fastq:
             --no-lane-splitting \
             --processing-threads {threads} \
             --use-bases-mask Y*,I8,N10,Y*
-
-        touch {output}
         """
