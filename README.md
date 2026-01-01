@@ -25,11 +25,11 @@ wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
 
 - generate reference genome file
 
-'''bash
+```bash
 mkdir -p ../data/reference
 wget -P ../data/reference https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
 gunzip ../data/reference/hg38.fa.gz
-'''
+```
 
 - snakefile1 - ejemplo codigo usado
 - .sh - ejemplo codigo usado 
