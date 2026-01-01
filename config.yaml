@@ -8,10 +8,12 @@ pools:
   - "POOL-551N"
 
 # carpeta archivos de las runs del secuenciador
-runs_dir: "data/runs"
+runs_dir: "../data/runs"
+fastq_dir: "../data/fastq"
+align_dir: "../data/alignments"
 
 # genoma de referencia
-reference: "data/reference/hg38.fa"
+reference: "../data/reference/hg38.fa"
 
 # 
 threads:

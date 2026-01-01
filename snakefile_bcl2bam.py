@@ -1,7 +1,6 @@
 import os
 import glob
 
-
 configfile: "config.yaml"
 
 # limitar wildcards al nombre de la muestra
@@ -22,9 +21,11 @@ POOLS = config.get("pools", [])
 if "pool" in config:
     POOLS = [config["pool"]]
 
-FASTQ_DIR = "data/fastq"
-ALIGN_DIR = "data/alignments"
+RUNS_DIR = config["runs_dir"]
+FASTQ_DIR = config["fastq_dir"]
+ALIGN_DIR = config["align_dir"]
 
+os.makedirs(FASTQ_DIR, exist_ok=True)
 os.makedirs(ALIGN_DIR, exist_ok=True)
 
 # ---------------------------------------------------
@@ -35,12 +36,11 @@ os.makedirs(ALIGN_DIR, exist_ok=True)
 # la function genera:
 # samples: lista con nombres de las muestras (L-25000010_S5_R1_001.fastq.gz -> L-25000010_S5_R1_001)
 # fastqs: diccionario con directorio de fastqs y los fastq files
-
 def load_fastqs_for_pool(pool):
 
     pool_path = os.path.join(FASTQ_DIR, pool)
 
-    # find valid FASTQ subfolder (ignore Stats/Reports)
+    # guardar carpeta con fastq (la que no es Stats o Reports)
     subfolders = [
         f for f in glob.glob(os.path.join(pool_path, "*"))
         if os.path.isdir(f) and os.path.basename(f) not in ["Stats", "Reports"]
@@ -98,6 +98,28 @@ final_bai = [
 rule all:
     input:
         final_bai
+
+# ---------------------------------------------------
+# bcl2fastq: demultiplex las muestras en cada pool y convertir en FASTQ
+# ---------------------------------------------------
+rule bcl2fastq:
+    input:
+        runfolder = lambda wc: os.path.join(RUNS_DIR, wc.pool)
+    output:
+        directory(os.path.join(FASTQ_DIR, "{pool}"))
+    threads:
+        config["threads"]["bcl2fastq"]
+    shell:
+        """
+        mkdir -p {FASTQ_DIR}/{wildcards.pool}
+
+        bcl2fastq \
+            --runfolder-dir {input.runfolder} \
+            --output-dir    {FASTQ_DIR}/{wildcards.pool} \
+            --no-lane-splitting \
+            --processing-threads {threads} \
+            --use-bases-mask Y*,I8,U10,Y*
+        """
 
 # ---------------------------------------------------
 # alineamiento

@@ -1,13 +1,13 @@
 Sender: LSF System <lsfadmin@rivm-lsfsv-l25p>
-Subject: Job 28032501: <python scripts/01_fragment_lengths.py> in cluster <RIVM-LSF-PRD> Exited
+Subject: Job 28032503: <python scripts/01_fragment_lengths.py> in cluster <RIVM-LSF-PRD> Done
 
-Job <python scripts/01_fragment_lengths.py> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Sat Dec 20 21:08:20 2025
-Job was executed on host(s) <rivm-lsfsv-l25p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Sat Dec 20 21:08:20 2025
+Job <python scripts/01_fragment_lengths.py> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Sat Dec 20 21:12:51 2025
+Job was executed on host(s) <rivm-lsfsv-l25p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Sat Dec 20 21:12:52 2025
 </home/suarezhs> was used as the home directory.
 </home/suarezhs/my_scratch_dir/tfm/bcltofragmentomics> was used as the working directory.
-Started at Sat Dec 20 21:08:20 2025
-Terminated at Sat Dec 20 21:08:38 2025
-Results reported at Sat Dec 20 21:08:38 2025
+Started at Sat Dec 20 21:12:52 2025
+Terminated at Sun Dec 21 03:53:24 2025
+Results reported at Sun Dec 21 03:53:24 2025
 
 Your job looked like:
 
@@ -16,24 +16,135 @@ Your job looked like:
 python scripts/01_fragment_lengths.py
 ------------------------------------------------------------
 
-Exited with exit code 1.
+Successfully completed.
 
 Resource usage summary:
 
-    CPU time :                                   2.90 sec.
-    Max Memory :                                 129 MB
-    Average Memory :                             85.80 MB
+    CPU time :                                   23772.21 sec.
+    Max Memory :                                 11025 MB
+    Average Memory :                             5285.75 MB
     Total Requested Memory :                     64000.00 MB
-    Delta Memory :                               63871.00 MB
-    Max Swap :                                   -
+    Delta Memory :                               52975.00 MB
+    Max Swap :                                   2 MB
     Max Processes :                              3
-    Max Threads :                                4
-    Run time :                                   18 sec.
-    Turnaround time :                            18 sec.
+    Max Threads :                                5
+    Run time :                                   24032 sec.
+    Turnaround time :                            24033 sec.
 
 The output (if any) follows:
 
 Processing 10-CH_S5.markdup.bam
+Processing 12-CH_S6.markdup.bam
+Processing 2-CH_S1.markdup.bam
+Processing 4-CH_S2.markdup.bam
+Processing 6-CH_S3.markdup.bam
+Processing 9-CH_S4.markdup.bam
+Processing CTRL-F-BL-CHUIMI_S8.markdup.bam
+Processing CTRL-M-BL-CHUIMI_S7.markdup.bam
+Processing L-25000010_S5.markdup.bam
+Processing L-25000011_S1.markdup.bam
+Processing L-25000015_S4.markdup.bam
+Processing L-25000020_S6.markdup.bam
+Processing L-25000021_S7.markdup.bam
+Processing L-25000022_S8.markdup.bam
+Processing L-25000023_S2.markdup.bam
+Processing L-25000024_S3.markdup.bam
+Processing ID25_S25.markdup.bam
+Processing ID26_S26.markdup.bam
+Processing ID27_S27.markdup.bam
+Processing ID28_S28.markdup.bam
+Processing ID29_S29.markdup.bam
+Processing ID30_S30.markdup.bam
+Processing ID31_S31.markdup.bam
+Processing ID32_S32.markdup.bam
+Processing L-25000047_S1.markdup.bam
+Processing L-25000048_S3.markdup.bam
+Processing L-25000049_S4.markdup.bam
+Processing L-25000051_S6.markdup.bam
+Processing L-25000057_S2.markdup.bam
+Processing L-25000058_S5.markdup.bam
+Processing L-25000059_S7.markdup.bam
+Processing L-25000061_S8.markdup.bam
+Processing L-25000063_S1.markdup.bam
+Processing L-25000065_S2.markdup.bam
+Processing L-25000066_S7.markdup.bam
+Processing L-25000069_S3.markdup.bam
+Processing L-25000071_S4.markdup.bam
+Processing L-25000075_S6.markdup.bam
+Processing L-25000076_S5.markdup.bam
+Processing L-25000080_S8.markdup.bam
+Processing L-25000007_S1.markdup.bam
+Processing L-25000026_S5.markdup.bam
+Processing L-25000038_S3.markdup.bam
+Processing L-25000046_S4.markdup.bam
+Processing L-25000064_S6.markdup.bam
+Processing L-25000086_S7.markdup.bam
+Processing L-25000099_S8.markdup.bam
+Processing L-25000105_S2.markdup.bam
+Processing L-25000067_S1.markdup.bam
+Processing L-25000081_S2.markdup.bam
+Processing L-25000082_S3.markdup.bam
+Processing L-25000089_S6.markdup.bam
+Processing L-25000090_S7.markdup.bam
+Processing L-25000091_S8.markdup.bam
+Processing L-25000092_S4.markdup.bam
+Processing L-25000098_S5.markdup.bam
+Processing 10-CH_S5.filtered.bam
+Processing 12-CH_S6.filtered.bam
+Processing 2-CH_S1.filtered.bam
+Processing 4-CH_S2.filtered.bam
+Processing 6-CH_S3.filtered.bam
+Processing 9-CH_S4.filtered.bam
+Processing CTRL-F-BL-CHUIMI_S8.filtered.bam
+Processing CTRL-M-BL-CHUIMI_S7.filtered.bam
+Processing ID25_S25.filtered.bam
+Processing ID26_S26.filtered.bam
+Processing ID27_S27.filtered.bam
+Processing ID28_S28.filtered.bam
+Processing ID29_S29.filtered.bam
+Processing ID30_S30.filtered.bam
+Processing ID31_S31.filtered.bam
+Processing ID32_S32.filtered.bam
+Processing L-25000007_S1.filtered.bam
+Processing L-25000010_S5.filtered.bam
+Processing L-25000011_S1.filtered.bam
+Processing L-25000015_S4.filtered.bam
+Processing L-25000020_S6.filtered.bam
+Processing L-25000021_S7.filtered.bam
+Processing L-25000022_S8.filtered.bam
+Processing L-25000023_S2.filtered.bam
+Processing L-25000024_S3.filtered.bam
+Processing L-25000026_S5.filtered.bam
+Processing L-25000038_S3.filtered.bam
+Processing L-25000046_S4.filtered.bam
+Processing L-25000047_S1.filtered.bam
+Processing L-25000048_S3.filtered.bam
+Processing L-25000049_S4.filtered.bam
+Processing L-25000051_S6.filtered.bam
+Processing L-25000057_S2.filtered.bam
+Processing L-25000058_S5.filtered.bam
+Processing L-25000059_S7.filtered.bam
+Processing L-25000061_S8.filtered.bam
+Processing L-25000063_S1.filtered.bam
+Processing L-25000064_S6.filtered.bam
+Processing L-25000065_S2.filtered.bam
+Processing L-25000066_S7.filtered.bam
+Processing L-25000067_S1.filtered.bam
+Processing L-25000069_S3.filtered.bam
+Processing L-25000071_S4.filtered.bam
+Processing L-25000075_S6.filtered.bam
+Processing L-25000076_S5.filtered.bam
+Processing L-25000080_S8.filtered.bam
+Processing L-25000081_S2.filtered.bam
+Processing L-25000082_S3.filtered.bam
+Processing L-25000086_S7.filtered.bam
+Processing L-25000089_S6.filtered.bam
+Processing L-25000090_S7.filtered.bam
+Processing L-25000091_S8.filtered.bam
+Processing L-25000092_S4.filtered.bam
+Processing L-25000098_S5.filtered.bam
+Processing L-25000099_S8.filtered.bam
+Processing L-25000105_S2.filtered.bam
 
 
 PS:
