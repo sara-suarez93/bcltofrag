@@ -26,8 +26,11 @@ wget https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
 - generate reference genome file
 
 ```bash
+# create containing folder within ../data
 mkdir -p ../data/reference
+# update path to reference of interest
 wget -P ../data/reference https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
+# unzip file
 gunzip ../data/reference/hg38.fa.gz
 ```
 
