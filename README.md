@@ -50,7 +50,7 @@ gunzip ../data/reference/hg38.fa.gz
 
 2. Run **snakefile_bcl2fastq.py**.
 
-* Demultiplexes Illumina BCL files while omitting the UMI read associated with the SureSelect XTHS probe design.
+* Demultiplexes Illumina BCL files while omitting the UMI read associated with the SureSelect XTHS probe design using *bcl2fastq* (https://support.illumina.com/content/dam/illumina-support/documents/documentation/software_documentation/bcl2fastq/bcl2fastq2-v2-20-software-guide-15051736-03.pdf).
 
 ```bash
 bsub -o logs_hpc/out.txt -e logs_hpc/err.txt -q bio -n 8 -W 1400 -M 64000 -hl -R 'rusage[mem=64000]' snakemake -s snakefile_bcl2fastq.py --cores 8
