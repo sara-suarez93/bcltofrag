@@ -30,6 +30,8 @@ python -m ipykernel install --user --name <env_name> --display-name "Python (<en
 > **_NOTE:_** This pipeline processes large sequencing datasets and generates substantial intermediate and output files (including BCL files, FASTQ files, BAM files, and QC outputs). It is therefore advised to place the project directory on a disk or filesystem with sufficient available storage.
 As a reference, processing a dataset of 52 samples sequenced using a targeted panel covering 13 exons required approximately 720 GB of disk space, including raw Illumina run data and downstream outputs.
 
+> **System requirements:** This pipeline assumes that you have access to a high-performance computing (HPC) environment with a job scheduler supporting the `bsub` command (LSF). The provided example commands and resource requests (CPU cores, memory limits) are tailored for LSF. Steps such as demultiplexing and alignment can require substantial memory (tens of gigabytes), so access to nodes with sufficient resources is recommended.
+
 # Usage
 
 1. Download reference files for alignments.
@@ -49,19 +51,21 @@ gunzip ../data/reference/hg38.fa.gz
 
 2. Run **snakefile_bcl2fastq.py**.
 
+* Demultiplexes Illumina BCL files while omitting the UMI read associated with the SureSelect XTHS probe design.
+
 ```bash
 bsub -o logs_hpc/out.txt -e logs_hpc/err.txt -q bio -n 8 -W 1400 -M 64000 -hl -R 'rusage[mem=64000]' snakemake -s snakefile_bcl2fastq.py --cores 8
 ```
 
 3. Run **fastqc.sh** and explore sequencing quality.
 
+* Generates FASTQC and MULTIQC reports.
+
 ```bash
 bsub -o logs_hpc/out_fastqc.txt -e logs_hpc/err_fastqc.txt -q bio -n 1 -W 1400 -M 64000 -hl -R 'rusage[mem=10000]' bash ./fastqc.sh
 ```
 
-5. Generate reference index files prior alignment.
-
-*Note: since bwa-mem requires high memory usage, I request 64GB on the LSF. Ref: https://github.com/bwa-mem2/bwa-mem2/issues/267.*
+4. Generate reference index files prior alignment.
 
 ```bash
 bsub -o logs_hpc/out_bwa_index.txt -e logs_hpc/err_bwa_index.txt -q bio -n 1 -W 1400 -M 64000 -hl -R 'rusage[mem=64000]' bash bwa-mem2 index ./data/reference/hg38.fa
@@ -69,25 +73,34 @@ bsub -o logs_hpc/out_bwa_index.txt -e logs_hpc/err_bwa_index.txt -q bio -n 1 -W 
 
 5. Run **snakefile_fastq2bam.py**
 
+* Aligns FASTQ files to reference genome (GRCh38) using *bwa-mem2* (https://github.com/bwa-mem2/bwa-mem2).
+
+* Marks duplicated reads using *picard* (https://broadinstitute.github.io/picard/faq.html).
+
 ```bash
 bsub -o logs_hpc/out_bcl2bam.txt -e logs_hpc/err_bcl2bam.txt -q bio -n 8 -W 1400 -M 64000 -hl -R 'rusage[mem=64000]' snakemake -s snakefile_fastq2bam.py --config pool=POOL-473N --cores 8
 ```
 
 6. Run **scripts/00_qc.py**
 
-*Note: scripts where submitted to the HPC to freely work on the notebook while the outputs were generated. Manually running the scripts is also an option.*
+* Filters high-quality reads as adviced in 10.1093/bioadv/vbaf236 (Only high-quality reads were considered in the analysis (uniquely mapped, no PCR duplicates, both ends are mapped with mapping qualities more than 30, and properly paired).
 
 ```bash
 bsub -o logs_hpc/out_qc.txt -e logs_hpc/err_qc.txt -q bio -n 1 -W 1400 -M 64000 -hl -R 'rusage[mem=64000]' python scripts/00_qc_after.py
 ```
+> **_NOTE:_** scripts where submitted to the HPC to freely work on the notebook while the outputs were generated. Manually running the scripts is also an option.*
 
 7. Run **scripts/01_fragment_lengths.py**
+
+* Generates `frag_length_bins()` output.
 
 ```bash
 bsub -o logs_hpc/out_fraglen.txt -e logs_hpc/err_fraglen.txt -q bio -n 1 -W 1400 -M 64000 -hl -R 'rusage[mem=64000]' python scripts/01_fragment_lengths.py
 ```
 
 8. Run **scripts/02_endmotifs.py**
+
+* Generates `end_motifs()` output.
 
 ```bash
 bsub -o logs_hpc/out_endmot.txt -e logs_hpc/err_endmot.txt -q bio -n 1 -W 1400 -M 64000 -hl -R 'rusage[mem=64000]' python scripts/02_endmotifs.py
