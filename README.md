@@ -27,10 +27,8 @@ conda activate <env_name>
 python -m ipykernel install --user --name <env_name> --display-name "Python (<env_name>)"
 ```
 
-> **_NOTE:_** This pipeline processes large sequencing datasets and generates substantial intermediate and output files (including BCL files, FASTQ files, BAM files, and QC outputs). It is therefore advised to place the project directory on a disk or filesystem with sufficient available storage.
+> **NOTE:** This pipeline processes large sequencing datasets and generates substantial intermediate and output files (including BCL files, FASTQ files, BAM files, and QC outputs). It is therefore advised to place the project directory on a disk or filesystem with sufficient available storage.
 As a reference, processing a dataset of 52 samples sequenced using a targeted panel covering 13 exons required approximately 720 GB of disk space, including raw Illumina run data and downstream outputs.
-
-> **System requirements:** This pipeline assumes that you have access to a high-performance computing (HPC) environment with a job scheduler supporting the `bsub` command (LSF). The provided example commands and resource requests (CPU cores, memory limits) are tailored for LSF. Steps such as demultiplexing and alignment can require substantial memory (tens of gigabytes), so access to nodes with sufficient resources is recommended.
 
 # Usage
 
@@ -48,6 +46,7 @@ wget -P ../data/reference https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZip
 # unzip file
 gunzip ../data/reference/hg38.fa.gz
 ```
+> **System requirements:** The pipeline assumes that you have access to a high-performance computing (HPC) environment with a LSF job scheduler supporting the `bsub` command. Job submission commands must be adapted if other schedulers are used. The provided example commands and resource requests (CPU cores, memory limits) are tailored for LSF. Steps such as demultiplexing and alignment can require substantial memory (tens of gigabytes), so access to nodes with sufficient resources is recommended.
 
 2. Run **snakefile_bcl2fastq.py**.
 
@@ -88,7 +87,7 @@ bsub -o logs_hpc/out_bcl2bam.txt -e logs_hpc/err_bcl2bam.txt -q bio -n 8 -W 1400
 ```bash
 bsub -o logs_hpc/out_qc.txt -e logs_hpc/err_qc.txt -q bio -n 1 -W 1400 -M 64000 -hl -R 'rusage[mem=64000]' python scripts/00_qc_after.py
 ```
-> **_NOTE:_** scripts where submitted to the HPC to freely work on the notebook while the outputs were generated. Manually running the scripts is also an option.*
+> **NOTE:** scripts where submitted to the HPC to freely work on the notebook while the outputs were generated. Manually running the scripts is also an option.*
 
 7. Run **scripts/01_fragment_lengths.py**
 
