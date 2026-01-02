@@ -82,7 +82,7 @@ bsub -o logs_hpc/out_bcl2bam.txt -e logs_hpc/err_bcl2bam.txt -q bio -n 8 -W 1400
 
 6. Run **scripts/00_qc.py**
 
-* Filters high-quality reads as adviced in 10.1093/bioadv/vbaf236 (Only high-quality reads were considered in the analysis (uniquely mapped, no PCR duplicates, both ends are mapped with mapping qualities more than 30, and properly paired).
+* Filters high-quality reads as adviced in https://doi.org/10.1093/bioadv/vbaf236 *(Only high-quality reads were considered in the analysis (uniquely mapped, no PCR duplicates, both ends are mapped with mapping qualities more than 30, and properly paired)*.
 
 ```bash
 bsub -o logs_hpc/out_qc.txt -e logs_hpc/err_qc.txt -q bio -n 1 -W 1400 -M 64000 -hl -R 'rusage[mem=64000]' python scripts/00_qc_after.py
