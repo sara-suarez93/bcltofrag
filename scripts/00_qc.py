@@ -1,7 +1,7 @@
 import os
 import re
 import glob
-import pysam # leer bam en python
+import pysam # leer bam-bai en python
 import matplotlib.pyplot as plt
 import numpy as np
 import time

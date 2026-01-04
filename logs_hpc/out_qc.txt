@@ -1,0 +1,197 @@
+Sender: LSF System <lsfadmin@rivm-lsfsv-l15p>
+Subject: Job 28236372: <python scripts/00_qc_after.py> in cluster <RIVM-LSF-PRD> Exited
+
+Job <python scripts/00_qc_after.py> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Tue Dec 30 15:28:48 2025
+Job was executed on host(s) <rivm-lsfsv-l15p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Tue Dec 30 15:28:49 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm/bcltofragmentomics> was used as the working directory.
+Started at Tue Dec 30 15:28:49 2025
+Terminated at Tue Dec 30 15:28:58 2025
+Results reported at Tue Dec 30 15:28:58 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python scripts/00_qc_after.py
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.80 sec.
+    Max Memory :                                 60 MB
+    Average Memory :                             48.50 MB
+    Total Requested Memory :                     32000.00 MB
+    Delta Memory :                               31940.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   9 sec.
+    Turnaround time :                            10 sec.
+
+The output (if any) follows:
+
+Leyendo y filtrando archivo .markdup.bam #1/56 y escribiendo en: ../data/alignments_qc_after/L-25000091_S8.filtered.bam
+
+
+
+PS:
+
+Read file <logs_hpc/err_qc.txt> for stderr output of this job.
+
+Sender: LSF System <lsfadmin@rivm-lsfsv-l17p>
+Subject: Job 28240004: <python scripts/00_qc_after.py> in cluster <RIVM-LSF-PRD> Done
+
+Job <python scripts/00_qc_after.py> was submitted from host <rivm-biohn-l09p.int.ssc-campus.nl> by user <suarezhs> in cluster <RIVM-LSF-PRD> at Tue Dec 30 16:41:11 2025
+Job was executed on host(s) <rivm-lsfsv-l17p>, in queue <bio>, as user <suarezhs> in cluster <RIVM-LSF-PRD> at Tue Dec 30 16:41:12 2025
+</home/suarezhs> was used as the home directory.
+</home/suarezhs/my_scratch_dir/tfm/bcltofragmentomics> was used as the working directory.
+Started at Tue Dec 30 16:41:12 2025
+Terminated at Tue Dec 30 23:02:33 2025
+Results reported at Tue Dec 30 23:02:33 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+python scripts/00_qc_after.py
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   22763.76 sec.
+    Max Memory :                                 71 MB
+    Average Memory :                             70.56 MB
+    Total Requested Memory :                     32000.00 MB
+    Delta Memory :                               31929.00 MB
+    Max Swap :                                   -
+    Max Processes :                              3
+    Max Threads :                                4
+    Run time :                                   22881 sec.
+    Turnaround time :                            22882 sec.
+
+The output (if any) follows:
+
+Leyendo y filtrando archivo .markdup.bam #1/56 y escribiendo en: ../data/alignments_qc_after/L-25000091_S8.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #2/56 y escribiendo en: ../data/alignments_qc_after/L-25000067_S1.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #3/56 y escribiendo en: ../data/alignments_qc_after/L-25000098_S5.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #4/56 y escribiendo en: ../data/alignments_qc_after/L-25000090_S7.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #5/56 y escribiendo en: ../data/alignments_qc_after/L-25000082_S3.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #6/56 y escribiendo en: ../data/alignments_qc_after/L-25000081_S2.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #7/56 y escribiendo en: ../data/alignments_qc_after/L-25000092_S4.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #8/56 y escribiendo en: ../data/alignments_qc_after/L-25000089_S6.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #9/56 y escribiendo en: ../data/alignments_qc_after/L-25000047_S1.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #10/56 y escribiendo en: ../data/alignments_qc_after/L-25000058_S5.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #11/56 y escribiendo en: ../data/alignments_qc_after/L-25000059_S7.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #12/56 y escribiendo en: ../data/alignments_qc_after/L-25000057_S2.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #13/56 y escribiendo en: ../data/alignments_qc_after/L-25000051_S6.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #14/56 y escribiendo en: ../data/alignments_qc_after/L-25000048_S3.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #15/56 y escribiendo en: ../data/alignments_qc_after/L-25000049_S4.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #16/56 y escribiendo en: ../data/alignments_qc_after/L-25000061_S8.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #17/56 y escribiendo en: ../data/alignments_qc_after/CTRL-F-BL-CHUIMI_S8.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #18/56 y escribiendo en: ../data/alignments_qc_after/9-CH_S4.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #19/56 y escribiendo en: ../data/alignments_qc_after/2-CH_S1.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #20/56 y escribiendo en: ../data/alignments_qc_after/10-CH_S5.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #21/56 y escribiendo en: ../data/alignments_qc_after/4-CH_S2.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #22/56 y escribiendo en: ../data/alignments_qc_after/CTRL-M-BL-CHUIMI_S7.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #23/56 y escribiendo en: ../data/alignments_qc_after/12-CH_S6.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #24/56 y escribiendo en: ../data/alignments_qc_after/6-CH_S3.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #25/56 y escribiendo en: ../data/alignments_qc_after/L-25000015_S4.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #26/56 y escribiendo en: ../data/alignments_qc_after/L-25000023_S2.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #27/56 y escribiendo en: ../data/alignments_qc_after/L-25000020_S6.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #28/56 y escribiendo en: ../data/alignments_qc_after/L-25000011_S1.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #29/56 y escribiendo en: ../data/alignments_qc_after/L-25000010_S5.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #30/56 y escribiendo en: ../data/alignments_qc_after/L-25000022_S8.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #31/56 y escribiendo en: ../data/alignments_qc_after/L-25000024_S3.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #32/56 y escribiendo en: ../data/alignments_qc_after/L-25000021_S7.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #33/56 y escribiendo en: ../data/alignments_qc_after/ID26_S26.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #34/56 y escribiendo en: ../data/alignments_qc_after/ID25_S25.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #35/56 y escribiendo en: ../data/alignments_qc_after/ID29_S29.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #36/56 y escribiendo en: ../data/alignments_qc_after/ID28_S28.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #37/56 y escribiendo en: ../data/alignments_qc_after/ID32_S32.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #38/56 y escribiendo en: ../data/alignments_qc_after/ID31_S31.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #39/56 y escribiendo en: ../data/alignments_qc_after/ID27_S27.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #40/56 y escribiendo en: ../data/alignments_qc_after/ID30_S30.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #41/56 y escribiendo en: ../data/alignments_qc_after/L-25000063_S1.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #42/56 y escribiendo en: ../data/alignments_qc_after/L-25000080_S8.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #43/56 y escribiendo en: ../data/alignments_qc_after/L-25000065_S2.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #44/56 y escribiendo en: ../data/alignments_qc_after/L-25000071_S4.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #45/56 y escribiendo en: ../data/alignments_qc_after/L-25000075_S6.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #46/56 y escribiendo en: ../data/alignments_qc_after/L-25000076_S5.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #47/56 y escribiendo en: ../data/alignments_qc_after/L-25000069_S3.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #48/56 y escribiendo en: ../data/alignments_qc_after/L-25000066_S7.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #49/56 y escribiendo en: ../data/alignments_qc_after/L-25000064_S6.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #50/56 y escribiendo en: ../data/alignments_qc_after/L-25000007_S1.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #51/56 y escribiendo en: ../data/alignments_qc_after/L-25000105_S2.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #52/56 y escribiendo en: ../data/alignments_qc_after/L-25000046_S4.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #53/56 y escribiendo en: ../data/alignments_qc_after/L-25000086_S7.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #54/56 y escribiendo en: ../data/alignments_qc_after/L-25000026_S5.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #55/56 y escribiendo en: ../data/alignments_qc_after/L-25000038_S3.filtered.bam
+
+Leyendo y filtrando archivo .markdup.bam #56/56 y escribiendo en: ../data/alignments_qc_after/L-25000099_S8.filtered.bam
+
+Tiempo total: 1737680330.90 minutos
+
+
+PS:
+
+Read file <logs_hpc/err_qc.txt> for stderr output of this job.
+
